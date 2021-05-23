@@ -59,7 +59,7 @@ In OpenCore config.plist, in DeviceProperties section, I added this:
 
 Fixing the ethernet connection
 
-After finishing installing Big Sur 11.2.2, I found that I don’t have internet connection. After trying the other port, the internet is on. The motherboard has two ports, only one port works. The one that is beside the USB-C is not working. The kext IntelMausi.kext is used for the ethernet connection Intel Ethernet I219-V.
+After finishing installing Big Sur 11.3.1, I found that I don’t have internet connection. After trying the other port, the internet is on. The motherboard has two ports, only one port works. The one that is beside the USB-C is not working. The kext IntelMausi.kext is used for the ethernet connection Intel Ethernet I219-V.
 
 Fixing sound:
 
