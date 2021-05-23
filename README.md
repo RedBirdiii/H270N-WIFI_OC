@@ -44,9 +44,6 @@ What isn’t working:
 
 - Sleep
 
-- Chime sound at the loading of OpenCore OS picker
-
-
     Notes:
 
     Troubleshooting iGPU with full acceleration
@@ -57,37 +54,36 @@ I changed that to MacPro6,1 and the setup goes very smooth.
 
 In OpenCore config.plist, in DeviceProperties section, I added this:
 
-PciRoot(0x0)/Pci(0x2,0x0)
+    PciRoot(0x0)/Pci(0x2,0x0)
     layout-id                 Data         <00001259>
 
-    Fixing the ethernet connection
+Fixing the ethernet connection
 
 After finishing installing Big Sur 11.2.2, I found that I don’t have internet connection. After trying the other port, the internet is on. The motherboard has two ports, only one port works. The one that is beside the USB-C is not working. The kext IntelMausi.kext is used for the ethernet connection Intel Ethernet I219-V.
 
-    Fixing sound:
+Fixing sound:
 
-    By following the guide of fixing sound, I got sound. I use the green aux output, and I choose Internal Speaker as my output device in Sound Preferences.
+By following the guide of fixing sound, I got sound. I use the green aux output, and I choose Internal Speaker as my output device in Sound Preferences.
 
-    In OpenCore config.plist, in DeviceProperties section, I added this:
-
-
-PciRoot(0x0)/Pci(0x1F,0x3)
+In OpenCore config.plist, in DeviceProperties section, I added this:
+    
+    PciRoot(0x0)/Pci(0x1F,0x3)
     layout-id                 Data         <21>
 
-    Wifi and Bluetooth:
+Wifi and Bluetooth:
 
 I only needed to add three kexts files in the Kexts folder.
 
-AirportItlwm.kext, IntelBluetoothFirmware.kext and IntelBluetoothInjector.kext
+    AirportItlwm.kext, IntelBluetoothFirmware.kext and IntelBluetoothInjector.kext
 
-    Sidenote: Ubuntu grub menu
+Sidenote: Ubuntu grub menu
 
 When I put the driver file CrScreenshotDxe.efi in Drivers folder of OpenCore to screenshots of the OS picker, keyboard keys are disabled at the grub menu of Ubuntu. I removed the file and got the grub menu working normally.
 
-    USB Mapping
+USB Mapping
 
 I used Hackintool to map my USB ports. Then added SSDT-EC-USBX.aml and SSDT-UIAC.aml in ACPI folder. Also USBPorts.kext.
 
 boot args:
 
-keepsyms=1 debug=0x100 alcid=21
+    keepsyms=1 debug=0x100 alcid=21
