@@ -1,4 +1,4 @@
-# Gigabyte H270N-WIFI - Big Sur 11.2.3, OpenCore 0.6.7
+# Gigabyte H270N-WIFI - Big Sur 11.3.1, OpenCore 0.6.9
 
 CPU: Intel Core i3-7100; Kaby Lake
 
@@ -18,7 +18,7 @@ Ethernet Card: Intel Ethernet Dual GbE LAN I219-V (only one of the two ports wor
 
 Wifi/BT Card: Intel Wireless 8265/ 8275 (comes with the MB)
 
-Other installed OSs: Windows 10 20H2 v2, Ubuntu 20.04.2
+Other installed OSs: Windows 10 21H1, Ubuntu 20.04.2
 
 Guides used:
 
