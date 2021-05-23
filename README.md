@@ -1,5 +1,8 @@
 # Gigabyte H270N-WIFI - Big Sur 11.3.1, OpenCore 0.6.9
 
+[Remember to fill SMBIOS info]
+
+
 CPU: Intel Core i3-7100; Kaby Lake
 
 GPU: Intel HD Graphics 630
@@ -87,3 +90,7 @@ I used Hackintool to map my USB ports. Then added SSDT-EC-USBX.aml and SSDT-UIAC
 boot args:
 
     keepsyms=1 debug=0x100 alcid=21
+
+
+
+[Remember to fill SMBIOS info]
