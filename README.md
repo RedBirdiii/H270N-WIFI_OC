@@ -1,28 +1,28 @@
 # Gigabyte H270N-WIFI 
 # macOS Sonoma 14.5, OpenCore 1.0.0
 
-[Remember to fill SMBIOS info with GenSMBIOS]
+> [!NOTE]
+> Remember to fill SMBIOS info with GenSMBIOS
 
+**CPU:** Intel Core i3-7100; Kaby Lake
 
-CPU: Intel Core i3-7100; Kaby Lake
+**GPU:** Intel HD Graphics 630
 
-GPU: Intel HD Graphics 630
+**RAM:** 16GB 2133MHz DDR4
 
-RAM: 16GB 2133MHz DDR4
+**Motherboard Model:** Gigabyte GA-H270N-WIFI
 
-Motherboard Model: Gigabyte GA-H270N-WIFI
+**BIOS revision:** F8d
 
-BIOS revision: F8d
+**Motherboard Model Website:** https://www.gigabyte.com/Motherboard/GA-H270N-WIFI-rev-10
 
-Motherboard Model Website: https://www.gigabyte.com/Motherboard/GA-H270N-WIFI-rev-10
+**Audio Codec:** Realtek ALC1220
 
-Audio Codec: Realtek ALC1220
+**Ethernet Card:** Intel Ethernet Dual GbE LAN I219-V (both ports works)
 
-Ethernet Card: Intel Ethernet Dual GbE LAN I219-V (both ports works)
+**Wifi/BT Card:** Intel Wireless 8265/ 8275 (MB stock card)
 
-Wifi/BT Card: Intel Wireless 8265/ 8275 (comes with the MB)
-
-Other installed OSs: Windows 11 23H2, Ubuntu 24.04 LTS
+**Other installed OSs:** Windows 11 23H2, Ubuntu 24.04 LTS
 
 ## Guides used:
 
@@ -65,39 +65,45 @@ In OpenCore config.plist, in DeviceProperties section, I added this:
 
 ### Fixing the ethernet connection
 
-Both ethernet ports work fine, the main port needs the kext IntelMausi.kext the other one uses Intel Ethernet I219-V kext.
+Both ethernet ports work fine, the main port needs the kext `IntelMausi.kext` the other one uses `SmallTree-Intel-211-AT-PCIe-GBE.kext`.
 
 ### Fixing sound:
 
 By following the guide of fixing sound, I got sound. I use the green aux output, and I choose Internal Speaker as my output device in Sound Preferences.
 
-In OpenCore config.plist, in DeviceProperties section, I added this:
+In OpenCore `config.plist`, in `DeviceProperties` section, I added this:
     
     PciRoot(0x0)/Pci(0x1F,0x3)
     layout-id                 Data         <21>
 
-Wifi and Bluetooth:
+### Wifi and Bluetooth:
 
 I only needed to add three kexts files in the Kexts folder.
 
-    AirportItlwm.kext, IntelBluetoothFirmware.kext and IntelBluetoothInjector.kext
+    AirportItlwm.kext, IntelBluetoothFirmware.kext and BlueToolFixup.kext
 
-USB Mapping
+### USB Mapping
 
 I used Hackintool to map my USB ports. Then added SSDT-EC-USBX.aml and SSDT-UIAC.aml in ACPI folder. Also USBPorts.kext (which is created by Hackintool).
 
-boot args:
+### boot args:
 
     keepsyms=1 debug=0x100 alcid=21
 
 
 
-[Remember to fill SMBIOS info]
+### SMBIOS info:
+
+You'll need to use GenSMBIOS to get your SMBIOS information.
 
 
-# Getting the files required
+# Getting the required files
 
-ACPI files: Check SSDTs section in Dortania guide.
+**ACPI files:** Check SSDTs section in Dortania guide.
 
-Kexts: Mark a note of the Kexts mentioned in the [Kernel - Add] section of config.plist file.
-       I've added RestrictedEvents.kext to have access to the new os updates, but keep in mind you need to set SecureBootModel to Disabled to install them.
+**Kexts:** Mark a note of the Kexts mentioned in the `Kernel - Add` section of config.plist file.
+       I've added `RestrictedEvents.kext` to have access to the new os updates, but keep in mind you'll need to set `SecureBootModel` to `Disabled` to install them.
+
+**Picker Variant:** Check the guide 'OpenCore beauty treatment' in Dortania page.
+
+**Tools and Drivers:** These are taken from OpenCorePKG package.
