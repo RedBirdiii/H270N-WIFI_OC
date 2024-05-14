@@ -88,7 +88,7 @@ When I put the driver file CrScreenshotDxe.efi in Drivers folder of OpenCore to 
 
 USB Mapping
 
-I used Hackintool to map my USB ports. Then added SSDT-EC-USBX.aml and SSDT-UIAC.aml in ACPI folder. Also USBPorts.kext.
+I used Hackintool to map my USB ports. Then added SSDT-EC-USBX.aml and SSDT-UIAC.aml in ACPI folder. Also USBPorts.kext (which is created by Hackintool).
 
 boot args:
 
