@@ -22,7 +22,7 @@ Ethernet Card: Intel Ethernet Dual GbE LAN I219-V (only one of the two ports wor
 
 Wifi/BT Card: Intel Wireless 8265/ 8275 (comes with the MB)
 
-Other installed OSs: Windows 10 21H1, Ubuntu 20.04.2
+Other installed OSs: Windows 11 23H2, Ubuntu 24.04 LTS
 
 Guides used:
 
@@ -48,9 +48,9 @@ What isn’t working:
 
 - Sleep
 
-    Notes:
+Notes:
 
-    Troubleshooting iGPU with full acceleration
+Troubleshooting iGPU with full acceleration
 
 I followed the Dortania’s guide to the letter, then checked the USB I made by that guide. Everything went great except when it reaches the recovery setup ‘language choice’ screen, the screen goes black. I found that the SMBIOS is the problem. iMac18,1 caused me troubles.
 
