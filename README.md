@@ -18,7 +18,7 @@ Motherboard Model Website: https://www.gigabyte.com/Motherboard/GA-H270N-WIFI-re
 
 Audio Codec: Realtek ALC1220
 
-Ethernet Card: Intel Ethernet Dual GbE LAN I219-V (only one of the two ports works, the one beside the USB-C port doesn’t work)
+Ethernet Card: Intel Ethernet Dual GbE LAN I219-V (both ports works)
 
 Wifi/BT Card: Intel Wireless 8265/ 8275 (comes with the MB)
 
@@ -42,11 +42,13 @@ What's working:
 
 - iMessages, Facetime
 
-- All USB ports; USB3, USB-C, USB2
+- All USB ports; USB3, USB-C, USB2 (You'll need Hackintool to assign USB ports properly)
 
 What isn’t working:
 
 - Sleep
+      - To avoid problems with this issue, disable all switches in Energy Saver section of Settings
+      - In Lock Screen, set 'Turn display off when inactive' to 'Never'
 
 Notes:
 
