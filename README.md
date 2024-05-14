@@ -57,7 +57,7 @@ Troubleshooting iGPU with full acceleration
 
 I followed the Dortania’s guide to the letter, then checked the USB I made by that guide. Everything went great except when it reaches the recovery setup ‘language choice’ screen, the screen goes black. I found that the SMBIOS is the problem. iMac18,1 caused me troubles.
 
-I changed that to MacPro6,1 and the setup goes very smooth.
+I changed that to iMacPro1,1 and the setup goes very smooth.
 
 In OpenCore config.plist, in DeviceProperties section, I added this:
 
