@@ -8,7 +8,7 @@ CPU: Intel Core i3-7100; Kaby Lake
 
 GPU: Intel HD Graphics 630
 
-RAM: 8GB 2133MHz DDR4
+RAM: 16GB 2133MHz DDR4
 
 Motherboard Model: Gigabyte GA-H270N-WIFI
 
