@@ -46,6 +46,7 @@ What's working:
 
 What isn’t working:
 
+- DRM in Apple TV application. (Only trailers works fine)
 - Sleep
       - To avoid problems with this issue, disable all switches in Energy Saver section of Settings
       - In Lock Screen, set 'Turn display off when inactive' to 'Never'
