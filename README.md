@@ -1,7 +1,7 @@
 # Gigabyte H270N-WIFI 
 # macOS Sonoma 14.5, OpenCore 1.0.0
 
-[Remember to fill SMBIOS info]
+[Remember to fill SMBIOS info with GenSMBIOS]
 
 
 CPU: Intel Core i3-7100; Kaby Lake
