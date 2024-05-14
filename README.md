@@ -55,9 +55,7 @@ Notes:
 
 Troubleshooting iGPU with full acceleration
 
-I followed the Dortania’s guide to the letter, then checked the USB I made by that guide. Everything went great except when it reaches the recovery setup ‘language choice’ screen, the screen goes black. I found that the SMBIOS is the problem. iMac18,1 caused me troubles.
-
-I changed that to iMacPro1,1 and the setup goes very smooth.
+I set SMBIOS to iMacPro1,1.
 
 In OpenCore config.plist, in DeviceProperties section, I added this:
 
@@ -66,7 +64,7 @@ In OpenCore config.plist, in DeviceProperties section, I added this:
 
 Fixing the ethernet connection
 
-After finishing installing Sonoma 14.5, I found that I don’t have internet connection. After trying the other port, the internet is on. The motherboard has two ports, only one port works. The one that is beside the USB-C is not working. The kext IntelMausi.kext is used for the ethernet connection Intel Ethernet I219-V.
+Both ethernet ports work fine, the main port needs the kext IntelMausi.kext the other one uses Intel Ethernet I219-V kext.
 
 Fixing sound:
 
@@ -82,10 +80,6 @@ Wifi and Bluetooth:
 I only needed to add three kexts files in the Kexts folder.
 
     AirportItlwm.kext, IntelBluetoothFirmware.kext and IntelBluetoothInjector.kext
-
-Sidenote: Ubuntu grub menu
-
-When I put the driver file CrScreenshotDxe.efi in Drivers folder of OpenCore to screenshots of the OS picker, keyboard keys are disabled at the grub menu of Ubuntu. I removed the file and got the grub menu working normally.
 
 USB Mapping
 
