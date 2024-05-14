@@ -1,4 +1,4 @@
-# Gigabyte H270N-WIFI - Big Sur 11.3.1, OpenCore 0.6.9
+# Gigabyte H270N-WIFI - macOS Sonoma 14.5, OpenCore 0.6.9
 
 [Remember to fill SMBIOS info]
 
