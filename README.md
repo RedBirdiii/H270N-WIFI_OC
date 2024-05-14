@@ -104,7 +104,7 @@ You'll need to use GenSMBIOS to get your SMBIOS information.
 **Kexts:** Mark a note of the Kexts mentioned in the `Kernel - Add` section of config.plist file.
        I've added `RestrictedEvents.kext` to have access to the new os updates, but keep in mind you'll need to set `SecureBootModel` to `Disabled` to install them.
 
-**Picker Variant:** Check the guide 'OpenCore beauty treatment' in Dortania page.
+**Picker Variant:** Check the guide **'OpenCore beauty treatment'** in **Dortania** page.
 
 **Tools and Drivers:** These are taken from OpenCorePKG package.
 
