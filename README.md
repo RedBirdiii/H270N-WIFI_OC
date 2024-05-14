@@ -24,11 +24,11 @@ Wifi/BT Card: Intel Wireless 8265/ 8275 (comes with the MB)
 
 Other installed OSs: Windows 11 23H2, Ubuntu 24.04 LTS
 
-Guides used:
+## Guides used:
 
 Dortania’s OpenCore Install Guide.
 
-What's working:
+## What's working:
 
 - iGPU with full acceleration.
 
@@ -44,29 +44,30 @@ What's working:
 
 - All USB ports; USB3, USB-C, USB2 (You'll need Hackintool to assign USB ports properly)
 
-What isn’t working:
+## What isn’t working:
 
 - DRM in Apple TV application. (Only trailers works fine)
 - Sleep
       - To avoid problems with this issue, disable all switches in Energy Saver section of Settings
       - In Lock Screen, set 'Turn display off when inactive' to 'Never'
 
-Notes:
+## Notes:
 
-Troubleshooting iGPU with full acceleration
-
+### SMBIOS info:
 I set SMBIOS to iMacPro1,1.
+
+### Intel HD Graphics 630
 
 In OpenCore config.plist, in DeviceProperties section, I added this:
 
     PciRoot(0x0)/Pci(0x2,0x0)
     layout-id                 Data         <00001259>
 
-Fixing the ethernet connection
+### Fixing the ethernet connection
 
 Both ethernet ports work fine, the main port needs the kext IntelMausi.kext the other one uses Intel Ethernet I219-V kext.
 
-Fixing sound:
+### Fixing sound:
 
 By following the guide of fixing sound, I got sound. I use the green aux output, and I choose Internal Speaker as my output device in Sound Preferences.
 
@@ -92,3 +93,11 @@ boot args:
 
 
 [Remember to fill SMBIOS info]
+
+
+# Getting the files required
+
+ACPI files: Check SSDTs section in Dortania guide.
+
+Kexts: Mark a note of the Kexts mentioned in the [Kernel - Add] section of config.plist file.
+       I've added RestrictedEvents.kext to have access to the new os updates, but keep in mind you need to set SecureBootModel to Disabled to install them.
