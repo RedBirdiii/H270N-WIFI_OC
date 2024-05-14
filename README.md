@@ -97,7 +97,7 @@ I used Hackintool to map my USB ports. Then added SSDT-EC-USBX.aml and SSDT-UIAC
 You'll need to use GenSMBIOS to get your SMBIOS information.
 
 
-# Getting the required files
+## Getting the required files
 
 **ACPI files:** Check SSDTs section in Dortania guide.
 
@@ -107,3 +107,8 @@ You'll need to use GenSMBIOS to get your SMBIOS information.
 **Picker Variant:** Check the guide 'OpenCore beauty treatment' in Dortania page.
 
 **Tools and Drivers:** These are taken from OpenCorePKG package.
+
+## Installing Sonoma 14.5
+
+You'll need to set `SecureBootModel` to `Disabled` during the installtion process. You can change it back to `Default`, after the installtion process is complete.
+You have to make sure that you are using `AirportItlwm.kext` that is made for Sonoma 14.4 or later.
