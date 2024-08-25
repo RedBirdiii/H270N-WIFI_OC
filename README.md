@@ -86,10 +86,6 @@ I only needed to add three kexts files in the Kexts folder.
 
 I used Hackintool to map my USB ports. Then added SSDT-EC-USBX.aml and SSDT-UIAC.aml in ACPI folder. Also USBPorts.kext (which is created by Hackintool).
 
-### boot args:
-
-    keepsyms=1 debug=0x100 alcid=21
-
 
 
 ### SMBIOS info:
