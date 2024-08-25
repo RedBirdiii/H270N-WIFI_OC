@@ -111,7 +111,7 @@ You'll need to use GenSMBIOS to get your SMBIOS information.
 ## Installing Sonoma 14.6.1
 
 > [!NOTE]
-> There is a fix to get the updates listed
+> There is a fix to get the updates listed, this is how:
 > 
 > You'll need the latest `RestrictedEvents.kext` in **Kexts** folder.
 > 
