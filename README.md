@@ -112,6 +112,8 @@ You'll need to use GenSMBIOS to get your SMBIOS information.
 
 > [!NOTE]
 > There is a fix to get the updates listed
+> You'll need the latest `RestrictedEvents.kext` in **Kexts** folder.
+> Also in `boot-args` you'll need to add `revpatch=sbvmm`
 
 You'll need to set `SecureBootModel` to `Disabled` during the installtion process. You can change it back to `Default`, after the installtion process is complete.
 You have to make sure that you are using `AirportItlwm.kext` that is made for Sonoma 14.4 or later.
