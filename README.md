@@ -74,7 +74,7 @@ By following the guide of fixing sound, I got sound. I use the green aux output,
 In OpenCore `config.plist`, in `DeviceProperties` section, I added this:
     
     PciRoot(0x0)/Pci(0x1F,0x3)
-    layout-id                 Data         <21>
+    layout-id                 Number         <21>
 
 ### Wifi and Bluetooth:
 
