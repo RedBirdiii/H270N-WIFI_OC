@@ -108,7 +108,7 @@ You'll need to use GenSMBIOS to get your SMBIOS information.
 
 **Tools and Drivers:** These are taken from OpenCorePKG package.
 
-## Installing Sonoma 14.5
+## Installing Sonoma 14.6.1
 
 You'll need to set `SecureBootModel` to `Disabled` during the installtion process. You can change it back to `Default`, after the installtion process is complete.
 You have to make sure that you are using `AirportItlwm.kext` that is made for Sonoma 14.4 or later.
