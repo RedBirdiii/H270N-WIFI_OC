@@ -38,14 +38,13 @@ Dortania’s OpenCore Install Guide.
 
 - Wifi and bluetooth. (I’m using the stock builtin card that comes with the motherboard)
 
-- ~~AirPort, AirDrop~~ They don't work anymore
-
 - iMessages, Facetime
 
 - All USB ports; USB3, USB-C, USB2 (You'll need Hackintool to assign USB ports properly)
 
 ## What isn’t working:
 
+- AirPort, AirPlay, AirDrop
 - DRM in Apple TV application. (Only trailers works fine)
 - Sleep
       - To avoid problems with this issue, disable all switches in Energy Saver section of Settings
