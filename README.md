@@ -38,7 +38,7 @@ Dortania’s OpenCore Install Guide.
 
 - Wifi and bluetooth. (I’m using the stock builtin card that comes with the motherboard)
 
-- --AirPort, AirDrop--
+- ~~AirPort, AirDrop~~ They don't work anymore
 
 - iMessages, Facetime
 
