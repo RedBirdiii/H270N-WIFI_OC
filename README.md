@@ -36,7 +36,7 @@ Dortania’s OpenCore Install Guide.
 
 - Ethernet
 
-- Wifi and bluetooth. (I’m using the stock builtin card that comes with the motherboard)
+- Wifi and bluetooth. Wifi requires Heliport application to be used.
 
 - iMessages, Facetime
 
