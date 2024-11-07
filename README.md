@@ -79,7 +79,7 @@ In OpenCore `config.plist`, in `DeviceProperties` section, I added this:
 
 I only needed to add three kexts files in the Kexts folder.
 
-    AirportItlwm.kext, IntelBluetoothFirmware.kext and BlueToolFixup.kext
+    Itlwm.kext, IntelBluetoothFirmware.kext and BlueToolFixup.kext
 
 ### USB Mapping
 
