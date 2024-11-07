@@ -103,7 +103,7 @@ You'll need to use GenSMBIOS to get your SMBIOS information.
 
 **Tools and Drivers:** These are taken from OpenCorePKG package.
 
-## Installing Sonoma 14.6.1
+## Installing Sequoia 15.1
 
 > [!NOTE]
 > There is a fix to get the updates listed, this is how:
@@ -113,4 +113,4 @@ You'll need to use GenSMBIOS to get your SMBIOS information.
 > Also in `boot-args` you'll need to add `revpatch=sbvmm`
 
 You'll need to set `SecureBootModel` to `Disabled` during the installtion process. You can change it back to `Default`, after the installtion process is complete.
-You have to make sure that you are using `AirportItlwm.kext` that is made for Sonoma 14.4 or later.
+You have to make sure that you are using `AirportItlwm.kext` that is made for Sequoia 15 or later.
