@@ -22,7 +22,7 @@
 
 **Wifi/BT Card:** Intel Wireless 8265/ 8275 (MB stock card)
 
-**Other installed OSs:** Windows 11 23H2, Ubuntu 24.04 LTS
+**Other installed OSs:** Windows 11 24H2, Ubuntu 24.04.1 LTS
 
 ## Guides used:
 
