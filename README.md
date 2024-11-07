@@ -1,5 +1,5 @@
 # Gigabyte H270N-WIFI 
-# macOS Sonoma 14.6.1, OpenCore 1.0.1
+# macOS Sequoia 15.1, OpenCore 1.0.2
 
 > [!NOTE]
 > Remember to fill SMBIOS info with GenSMBIOS
