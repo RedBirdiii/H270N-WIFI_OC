@@ -103,7 +103,7 @@ You'll need to use GenSMBIOS to get your SMBIOS information.
 
 **Tools and Drivers:** These are taken from OpenCorePKG package.
 
-## Installing Sequoia 15.1
+## Installing Sequoia 15.2
 
 > [!NOTE]
 > There is a fix to get the updates listed, this is how:
